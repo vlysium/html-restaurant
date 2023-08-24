@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact page</title>
 </head>
+
 <body>
-  
+  <header>
+    <h1>Restaurant KEA</h1>
+    <nav>
+      <ul>
+        <li><a href="/home-page.html" title="Home page">Home</a></li>
+        <li><a href="/food-menu.html" title="Food menu">Menu</a></li>
+        <li><a href="/contact.html" title="Contact us">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <address>
+      <p>Guldbergsgade 29N 2200 Copenhagen</p>
+      <p>Phone no.: <a href="tel:+4520825370">20 82 53 70</a></p>
+      <p>E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
+      <img src="/img/map.jpg" alt="Restaurant KEA location on Google Maps">
+    </address>
+    <form action="/contact.html">
+      <fieldset>
+        <legend>Contact form</legend>
+        <div>
+          <label for="fullname">Fullname</label>
+          <input type="text" id="fullname" />
+        </div>
+        <div>
+          <label for="phone">Phone no.</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="persons">Persons</label>
+          <input type="number" id="persons" />
+        </div>
+        <div>
+          <label for="time">Date and time</label>
+          <input type="datetime-local" id="time" />
+        </div>
+        <div>
+          <label for="message">Further information</label><br />
+          <textarea id="message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; KEA Development</p>
+  </footer>
 </body>
+
 </html>
